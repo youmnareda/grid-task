@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F6F5F2;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal;
+}
+.navList{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 60px;
+    /* margin-top: 10px; */
+    background-color: #E1F2FB;
+    /* margin-bottom: 20px; */
+}
+.navList ul{
+   display: flex;
+   gap: 60px;
+}
+.navList ul li{
+    list-style: none;
+}
+.navList ul li a , .logo{
+    text-decoration: none;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #17153B;
+}
+.navList ul a:hover{
+    color: rgba(105, 33, 93, 0.685);
+}
+/*********************main********************/
+.container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(12,1fr);
+    grid-gap: 15px;
+    padding: 10px;
+}
+
+.sidebar {
+    background-color: #B1B2FF;
+    grid-column: 1/2;
+    grid-row: 1/12;
+    padding: 15px;
+}
+
+.main {
+    background-color: #EDD2F3;
+    grid-column: 2/5;
+    grid-row: 1/7;
+    padding: 15px;
+}
+
+.extra1 {
+    background-color: #D2DAFF;
+    grid-column: 2/3;
+    grid-row: 7/12;
+    padding: 15px;
+}
+
+.extra2 {
+    background-color: lightblue;
+    grid-column: 3/4;
+    grid-row: 7/12;
+    padding: 15px;
+}
+
+.extra3 {
+    background-color: #D2DAFF;
+    grid-column: 4/5;
+    grid-row: 7/12;
+    padding: 15px;
+}
+
+.footer {
+    background-color: #AAC4FF;
+    grid-column: 1/5;
+    grid-row: 12/13;
+    padding: 10px;
+    text-align: center;
+}
+.container .main span {
+    display: inline-block; 
+    width: 290px;
+    height: 40px;
+    padding: 10px;
+    background-color: #C3AED6;
+    text-align: center;
+    margin-left: 40px;
+    border-radius: 10px;
+    color: #17153B;
+}
+a{
+    text-decoration: none;
+    color: #643A6B;
+}
+h1{
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #17153B;
+}
+h2{
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #17153B;
+}
+p , li {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #2E236C;
+}
+strong{
+    font-weight: 700;
+    
+}
